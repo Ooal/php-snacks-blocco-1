@@ -30,7 +30,7 @@
   }else {
     echo "false";
   }*/
-  if (strlen($name) > 3 && strpos($mail,$punto) && strpos($mail,$chiocciola) && is_numeric($age)) {
+  if (strlen($name) > 3 && strpos($mail,$punto)!==false && strpos($mail,$chiocciola)!==false && is_numeric($age)) {
     echo "Accesso riuscito";
   } else {
     echo "Accesso negato";
